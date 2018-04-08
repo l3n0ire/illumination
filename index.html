@@ -431,12 +431,12 @@ h4{
 
 <script type="text/javascript">
 var toggle = true;
-$(".btn").click(function(){
+$(".btn:nth-child(n)").click(function(){
 	if (toggle){
-		$(".btn").text("Show Rationale");
+		$(this).text("Show Rationale");
 		toggle = false;
 	} else {
-		$(".btn").text("Hide Rationale");
+		$(this).text("Hide Rationale");
 		toggle = true;
 	} 
 });
